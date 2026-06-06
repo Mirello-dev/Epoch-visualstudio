@@ -114,7 +114,7 @@ namespace EpochVisualStudio
 
             try
             {
-                Process.Start(new ProcessStartInfo(baseUrl + "/") { UseShellExecute = true });
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(baseUrl + "/") { UseShellExecute = true });
             }
             catch (Exception ex)
             {

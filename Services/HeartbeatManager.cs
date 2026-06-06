@@ -138,7 +138,7 @@ namespace EpochVisualStudio.Services
             try
             {
                 _ideName = "Visual Studio " + _dte.Version;
-                _mainHwnd = new IntPtr(_dte.MainWindow.HWnd);
+                _mainHwnd = (IntPtr)_dte.MainWindow.HWnd;
                 _isWindowFocused = GetForegroundWindow() == _mainHwnd;
             }
             catch (Exception ex)
