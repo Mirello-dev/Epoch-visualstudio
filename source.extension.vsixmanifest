@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="EpochVisualStudio.Mirello.1d9ecf8b-2a3e-4c7a-9f1b-7e2d6a4c5b30" Version="0.1.2" Language="en-US" Publisher="Mirello" />
-    <DisplayName>epoch-time</DisplayName>
-    <Description xml:space="preserve">The swiss army knife for coding time tracking. Automatically records your focus time and syncs it to your epoch instance.</Description>
-    <MoreInfo>https://mirello.ch</MoreInfo>
-    <License>LICENSE</License>
-    <Icon>images\epoch-logo.png</Icon>
-    <PreviewImage>images\epoch-logo.png</PreviewImage>
-    <Tags>epoch;time;timer;time tracking;productivity;analytics;metrics;codetime</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,19.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-  </Dependencies>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,19.0)" DisplayName="Visual Studio core editor" />
-  </Prerequisites>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-  </Assets>
+    <Metadata>
+        <Identity Id="EpochVisualStudio.Mirello.1d9ecf8b-2a3e-4c7a-9f1b-7e2d6a4c5b30" Version="0.1.0" Language="en-US" Publisher="Mirello" />
+        <DisplayName>epoch-time</DisplayName>
+        <Description xml:space="preserve">The swiss army knife for coding time tracking. Automatically records your focus time and syncs it to your epoch instance.</Description>
+        <MoreInfo>https://mirello.ch</MoreInfo>
+        <License>LICENSE</License>
+        <Icon>images\epoch-logo.png</Icon>
+        <PreviewImage>images\epoch-logo.png</PreviewImage>
+        <Tags>epoch;time;timer;time tracking;productivity;analytics;metrics;codetime</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,19.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,19.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
 </PackageManifest>
