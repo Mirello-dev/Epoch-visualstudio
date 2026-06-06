@@ -1,0 +1,13 @@
+## Visual Studio build output
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+## VSIX output
+*.vsix
+
+## NuGet
+packages/
+*.nupkg

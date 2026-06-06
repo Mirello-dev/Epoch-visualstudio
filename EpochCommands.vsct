@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidEpochPackage">
+
+    <Groups>
+      <Group guid="guidEpochCmdSet" id="EpochMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidEpochCmdSet" id="cmdSetApiKey" priority="0x0100" type="Button">
+        <Parent guid="guidEpochCmdSet" id="EpochMenuGroup" />
+        <Strings>
+          <ButtonText>epoch: Set API Key</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidEpochCmdSet" id="cmdSetBaseUrl" priority="0x0101" type="Button">
+        <Parent guid="guidEpochCmdSet" id="EpochMenuGroup" />
+        <Strings>
+          <ButtonText>epoch: Set Instance</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidEpochCmdSet" id="cmdValidateApiKey" priority="0x0102" type="Button">
+        <Parent guid="guidEpochCmdSet" id="EpochMenuGroup" />
+        <Strings>
+          <ButtonText>epoch: Validate API Key</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidEpochCmdSet" id="cmdOpenDashboard" priority="0x0103" type="Button">
+        <Parent guid="guidEpochCmdSet" id="EpochMenuGroup" />
+        <Strings>
+          <ButtonText>epoch: Open Dashboard</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidEpochCmdSet" id="cmdShowOutput" priority="0x0104" type="Button">
+        <Parent guid="guidEpochCmdSet" id="EpochMenuGroup" />
+        <Strings>
+          <ButtonText>epoch: Show Output</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidEpochPackage" value="{1d9ecf8b-2a3e-4c7a-9f1b-7e2d6a4c5b30}" />
+
+    <GuidSymbol name="guidEpochCmdSet" value="{2e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b}">
+      <IDSymbol name="EpochMenuGroup" value="0x1020" />
+      <IDSymbol name="cmdSetApiKey" value="0x0100" />
+      <IDSymbol name="cmdSetBaseUrl" value="0x0101" />
+      <IDSymbol name="cmdValidateApiKey" value="0x0102" />
+      <IDSymbol name="cmdOpenDashboard" value="0x0103" />
+      <IDSymbol name="cmdShowOutput" value="0x0104" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
