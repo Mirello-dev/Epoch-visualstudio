@@ -10,6 +10,9 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/mirello-dev/epoch-visualstudio/actions/workflows/package.yml">
+    <img src="https://github.com/mirello-dev/epoch-visualstudio/actions/workflows/package.yml/badge.svg" alt="Build" />
+  </a>
   <a href="https://github.com/mirello-dev/epoch-visualstudio/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-GPL--3.0-green" alt="License" />
   </a>
@@ -34,7 +37,7 @@ This is the **Visual Studio** edition. It is a feature-for-feature port of the [
 
 ## Requirements
 
-- Visual Studio 2022 (17.0+), Community / Professional / Enterprise
+- Visual Studio 2022 or 2026 (17.x–18.x), Community / Professional / Enterprise
 
 ## Getting started
 
@@ -74,7 +77,9 @@ Configuration is stored at `~/.config/epoch/config.json` (respects `$XDG_CONFIG_
 
 ## Building from source
 
-Open `EpochVisualStudio.sln` in Visual Studio 2022 with the **Visual Studio extension development** workload installed, then build. The `.vsix` is produced under `bin\Debug` / `bin\Release`. Pressing **F5** launches an experimental VS instance with the extension loaded.
+Open `EpochVisualStudio.sln` in Visual Studio 2022 or 2026 with the **Visual Studio extension development** workload installed, then build. The `.vsix` is produced under `bin\Debug` / `bin\Release`. Pressing **F5** launches an experimental VS instance with the extension loaded.
+
+Continuous integration builds every push via [GitHub Actions](.github/workflows/package.yml); pushing a `v*` tag builds and publishes to the Visual Studio Marketplace.
 
 ## How it maps to the VS Code extension
 
